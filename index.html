@@ -1,85 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>AgroMap</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Hello, world!</title>
 </head>
 
 <body>
-    <header>
-        <nav class="top-navbar">
-            <a href=""><img class="side-menu-icon" src="img/bars.png" alt=""></a>
-            <img class="logo" src="img/AgroMap-top-logo.png" alt="Logo">
-            <ul>
-                <li><a href="#"><img src="img/Search.svg" alt="search"></a></li>
-                <li><a href="#"><img src="img/Share map.svg" alt="Share"></a></li>
-                <li><a href="#"><img src="img/Tool Map.svg" alt="tool Map"></a></li>
-                <li><a href="#"><img src="img/Logout.svg" alt="Logout"></a></li>
-                <li><a href="#"><img src="img/Avatar.svg" alt="Avatar"></a></li>
-            </ul>
-        </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light py-0 d-flex justify-content-between agromap-top-nav">
+      <a href="#"><img src="img/Menu_Icon feather.svg" class="menu-bars-icon" alt="Bars"></a>
 
-        <div class="menu-form">
-                <select id="Provincia" name="Provincia">
-                    <option value="au">Provincia</option>
-                </select>
+      <a class="navbar-brand px-0 py-0 agromap-logo" href="#">
+        <img src="img/AgroMap-top-logo.png" alt="" style="width: 260px;">
+      </a>
 
-                <select id="Distrito" name="Distrito">
-                    <option value="au">Distrito</option>
-                </select>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="img/Menu_Icon feather.svg" class="menu-bars-icon" alt="Bars">
+      </button>
 
-                <select id="Corregimiento" name="Corregimiento">
-                    <option value="au">Corregimiento</option>
-                </select>
+      <div class="collapse navbar-collapse flex-grow-0 nav-icon" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><img src="img/Search.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/Share map.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><img src="img/Tool Map.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><img src="img/Logout.svg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><img src="img/Avatar.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-                <select id="Fecha-de-siembra" name="Fecha de siembra">
-                    <option value="au">Fecha de siembra</option>
-                </select>
+    <div class="form-row menu-form">
+      <select id="Provincia" class="col-md" name="Provincia">
+        <option value="au">Provincia</option>
+      </select>
 
-                <p>a</p>
+      <select id="Distrito" class="col-md" name="Distrito">
+        <option value="au">Distrito</option>
+      </select>
 
-                <select id="Fecha-de-cosecha" name="Fecha de cosecha">
-                    <option value="au">Fecha de cosecha</option>
-                </select>
+      <select id="Corregimiento" class="col-md" name="Corregimiento">
+        <option value="au">Corregimiento</option>
+      </select>
 
-                <select id="Fecha-de-actualización" name="Fecha de actualización">
-                    <option value="au">Fecha de actualización</option>
-                </select>
+      <select id="Fecha-de-siembra" class="col-md" name="Fecha de siembra">
+        <option value="au">Fecha de siembra</option>
+      </select>
 
-                <p>a</p>
+      <p>a</p>
 
-                <select id="ÁreaSembrada" name="ÁreaSembrada">
-                    <option value="au">ÁreaSembrada</option>
-                </select>
+      <select id="Fecha-de-cosecha" class="col-md" name="Fecha de cosecha">
+        <option value="au">Fecha de cosecha</option>
+      </select>
 
-                <select id="Responsable" name="Responsable">
-                    <option value="au">Responsable</option>
-                </select>
+      <select id="Fecha-de-actualización" class="col-md" name="Fecha de actualización">
+        <option value="au">Fecha de actualización</option>
+      </select>
 
-                <select id="Variedad" name="Variedad">
-                    <option value="au">Variedad</option>
-                </select>
-        </div>
-    </header>
+      <p>a</p>
 
-        <aside class="left-sidebar">
-            <a href="#"><img src="img/logout.png" alt=""></i></a>
-            <a href="#"><img src="img/Setting_add_Custom_route.svg" alt=""></a>
-            <a href="#"><img src="img/Charts.svg" alt=""></a>
-            <a href="#"><img src="img/Icon metro-table.svg" alt=""></a>
-            <a href="#"><img src="img/Upload_Button.svg" alt=""></a>
-            <a href="#"><img src="img/Layer_On_Off.svg" alt=""></i></a>
-            <a href="#"><img src="img/Base_map.svg" alt=""></i></a>
-            <a href="#"><img src="img/Heat Map active inactive.svg" alt=""></i></a>
-            <a href="#"><img src="img/Cluster Active inactive.svg" alt=""></i></a>
-        </aside>
-        
-        <div class="right-sidebar">
-            
-        </div>
+      <select id="ÁreaSembrada" class="col-md" name="ÁreaSembrada">
+        <option value="au">ÁreaSembrada</option>
+      </select>
+
+      <select id="Responsable" class="col-md" name="Responsable">
+        <option value="au">Responsable</option>
+      </select>
+
+      <select id="Variedad" class="col-md" name="Variedad">
+        <option value="au">Variedad</option>
+      </select>
+    </div>
+  </header>
+
+
+
+  <aside class="left-sidebar">
+    <a href="#"><img src="img/logout.png" alt=""></i></a>
+    <a href="#"><img src="img/Setting_add_Custom_route.svg" alt=""></a>
+    <a href="#"><img src="img/Charts.svg" alt=""></a>
+    <a href="#"><img src="img/Icon metro-table.svg" alt=""></a>
+    <a href="#"><img src="img/Upload_Button.svg" alt=""></a>
+    <a href="#"><img src="img/Layer_On_Off.svg" alt=""></i></a>
+    <a href="#"><img src="img/Base_map.svg" alt=""></i></a>
+    <a href="#"><img src="img/Heat Map active inactive.svg" alt=""></i></a>
+    <a href="#"><img src="img/Cluster Active inactive.svg" alt=""></i></a>
+  </aside>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
