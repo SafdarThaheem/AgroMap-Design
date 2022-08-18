@@ -6,6 +6,7 @@
 
 :root{
     --nav-height: 94px; 
+    --nav-form : 60px;
     --nav-social-icon-size: 35px;
     --nav-bg-color : white;
  }
@@ -20,8 +21,16 @@
     border-left: 2px solid black;
 }
 
-header .menu-bars-icon{
+.menu-bars-icon{
     height: 20px;
+}
+
+.left-side-menu{
+    border: none;
+}
+
+.left-side-menu:active{
+    border: none;
 }
 
 
@@ -39,25 +48,31 @@ header .menu-bars-icon{
 .menu-form{
     height: 68px;
     background-color: #2D2D2D;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+    transition: all 0.5s;
 }
 
 
 .menu-form p{
     color: white;
+    text-align: center;
+    vertical-align: middle;
 }
+
 
 .menu-form select{
     width: 120px;
     background-color: white;
-    padding: 10px;
+    padding: 8px;
     border-radius: 15px;
-    margin: 0 10px;
 }
 
 .left-sidebar{
+    margin-top: var(--nav-height) ;
     background-color: #585858;
     display: flex;
     align-items: center;
@@ -66,8 +81,9 @@ header .menu-bars-icon{
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    width: 100px;
+    width: 0;
     left: 0;
+    transition: 0.5s;
 }
 
 .left-sidebar a{
@@ -78,6 +94,17 @@ header .menu-bars-icon{
 .left-sidebar a img{
     height: 35px;
 }
+
+.myright-sidebar{
+    background-color:lightblue; 
+    display: fixed;
+    overflow-x: hidden; 
+    width: 0px; 
+    float: right; 
+    height: 100vh;
+    transition: 0.5s;
+}
+
 
 @media only screen and (max-width: 992px){
     .agromap-top-nav{
@@ -90,5 +117,15 @@ header .menu-bars-icon{
 
     .nav-icon{
         border-left: none;
+    }
+
+    .menu-form{
+        height: auto;
+        padding: 10px 5px;
+        gap: 15px;
+    }
+
+    .menu-form select{
+        width: 100%;
     }
 }
