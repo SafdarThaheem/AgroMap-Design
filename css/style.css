@@ -52,8 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5px;
-    transition: all 0.5s;
+    transition: 0.5s;
 }
 
 
@@ -67,7 +66,7 @@
 .menu-form select{
     width: 120px;
     background-color: white;
-    padding: 8px;
+    padding: 5px;
     border-radius: 15px;
 }
 
@@ -95,14 +94,33 @@
     height: 35px;
 }
 
+
+
 .myright-sidebar{
-    background-color:lightblue; 
-    display: fixed;
+    background-color: white;
+    display: flex;
     overflow-x: hidden; 
     width: 0px; 
-    float: right; 
-    height: 100vh;
+    /* float: right;  */
+    height: calc(100vh - 94px);
     transition: 0.5s;
+    right: 0;
+    top: 94px;
+    position: absolute;
+}
+
+.myright-sidebar .right-side-col{
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+.myright-sidebar .right-side-col p{
+    margin-bottom: 0 !important;
+}
+
+.myright-sidebar .right-side-col img{
+    padding: 10px;
 }
 
 
