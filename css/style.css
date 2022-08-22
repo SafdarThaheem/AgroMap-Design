@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+
+
 :root{
     --nav-height: 94px; 
     --nav-form : 60px;
     --nav-social-icon-size: 35px;
     --nav-bg-color : white;
+ }
+
+ .agromap-logo{
+    margin-right: 0rem !important;
+ }
+
+ .agromap-logo img{
+    width: 260px;
  }
 
 .agromap-top-nav{
@@ -52,7 +62,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 5px;
     transition: 0.5s;
+}
+
+.menu-form div{
+    padding: 0;
 }
 
 
@@ -66,7 +81,7 @@
 .menu-form select{
     width: 120px;
     background-color: white;
-    padding: 5px;
+    padding: 5px 0px;
     border-radius: 15px;
 }
 
@@ -125,7 +140,7 @@
 
 
 @media only screen and (max-width: 992px){
-    .agromap-top-nav{
+     .agromap-top-nav{
         height: auto;
     }
 
@@ -137,13 +152,34 @@
         border-left: none;
     }
 
+    .myright-sidebar{
+        top: 111px;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .menu-form div{
+        flex-basis: 100%;
+        width: 100%;
+    } 
+    
+    .menu-form select{
+        width: 100%;
+    }
+
     .menu-form{
         height: auto;
         padding: 10px 5px;
         gap: 15px;
     }
+}
 
-    .menu-form select{
-        width: 100%;
+@media only screen and (max-width: 370px) {
+    .agromap-top-nav{
+        padding: 0 5px !important;
     }
+
+    .agromap-logo img{
+        width: 200px;
+     }
 }
